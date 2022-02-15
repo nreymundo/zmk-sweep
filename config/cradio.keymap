@@ -59,9 +59,9 @@
     };
 
     behaviors {
-        ram: ralt_mod {
+        dkm: dualkey_mod {
             compatible = "zmk,behavior-hold-tap";
-            label = "RIGHT_ALT_MOD";
+            label = "DUAL_KEY_MOD";
             #binding-cells = <2>;
             tapping-term-ms = <200>;    // <---[[moderate duration]]
             quick-tap-ms = <0>;
@@ -77,7 +77,7 @@
                 bindings = <
                     &kp Q &kp W &kp E &kp R &kp T 						                            &kp Y &kp U  &kp I    &kp O   &kp P 
                     &kp A &kp S &kp D &kp F &kp G 			        	                            &kp H &kp J &kp K &kp L &kp QUOT
-                    &mt LSFT Z &kp X &kp C &kp V &kp B				                                &ram RA(N) N &kp M  &kp CMMA &kp DOT &mt LSFT RET
+                    &mt LSFT Z &kp X &kp C &kp V &kp B				                                &dkm RA(N) N &kp M  &kp CMMA &kp DOT &mt LSFT RET
                                                             &mo FIRST &mt LCTL SPC   				&mt RCTL SPC &mo SECOND 
                 >;
             };
@@ -94,7 +94,7 @@
             second_layer {
                 bindings = <
                     &kp BANG  &kp ATSN &kp HASH  &kp DLLR  &kp PRCT    			                    &kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN 
-                    &kp HASH  &ram RA(QMARK) QMARK  &kp FSLH  &kp COLN  &kp SCLN 			        &kp MINUS &kp KP_EQUAL  &kp LBRC  &kp RBRC   &kp BKSP
+                    &kp HASH  &dkm RA(QMARK) QMARK  &kp FSLH  &kp COLN  &kp SCLN 			        &kp MINUS &kp KP_EQUAL  &kp LBRC  &kp RBRC   &kp BKSP
                     &kp LSFT  &kp KPLS &kp LBKT &kp RBKT   &kp BSLH    			                    &kp UNDER &kp LEFT &kp DOWN &kp UP  &kp RIGHT
                                                             &mo THIRD &kp LCTL  		        &kp SPC  &mo SECOND 
                 >;
@@ -105,7 +105,7 @@
                     &kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5 			            &trans &trans   &trans   &trans  &trans
                     &kp F1 &kp F2 &kp F3 &kp F4 &kp F5  						                        &trans &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans 
                     &bt BT_CLR  &bt BT_NXT &bt BT_PRV &kp F6 &kp F7   				                    &trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
-                                                            &trans &bootloader  					&bootloader &trans 
+                                                            &trans &bootloader  		&bootloader &trans 
                 >;
             };	
         
