@@ -73,7 +73,7 @@
             sym_layer {
                 bindings = <
                     &kp N1      &kp N2          &kp N3          &kp N4      &kp N5		                &kp N6          &kp N7                  &kp N8      &kp N9      &kp N0 
-                    &kp LT      &kp PERCENT     &kp LPAR        &kp LBRC    &kp LBKT 		            &kp KP_EQUAL    &dkm RA(QMARK) QMARK    &kp SQT     &kp KP_PLUS &kp ASTRK 
+                    &kp LT      &kp PERCENT     &kp LPAR        &kp LBRC    &kp LBKT 		            &kp EQUAL       &kp QMARK               &kp SQT     &kp KP_PLUS &kp ASTRK 
                     &kp GT      &kp DOLLAR 	    &kp RPAR        &kp RBRC    &kp RBKT 	                &kp AT          &kp EXCL                &kp DQT     &kp MINUS   &kp SLASH 
                                                                 &mo FNC     &mo SYM2  				    &trans          &trans
                 >;
@@ -100,7 +100,7 @@
             symbols_2_layer {
                 bindings = <
 		            &kp CARET   &kp UNDER       &none           &none       &kp HASH                    &none           &none                   &none           &none   &none 
-		            &kp GRAVE   &kp TILDE       &kp BSLH        &kp PIPE    &kp AMPS                    &none           &none                   &none           &none   &none
+		            &kp GRAVE   &kp TILDE       &kp BSLH        &kp PIPE    &kp AMPS                    &none           &kp RA(QMARK)           &none           &none   &none
 		            &none       &none           &none           &none       &none				        &none           &none                   &none           &none   &none 
           				                                        &none       &none                       &none           &none 
                 >;
@@ -108,8 +108,8 @@
             
             accent_layer {
                 bindings = <
-		            &kp RA(Q)   &kp UNDER       &kp RA(E)       &kp RA(R)   &kp HASH                    &kp RA(Y)       &kp RA(U)               &kp RA(I)       &kp RA(O)   &kp RA(P) 
-		            &kp RA(A)   &kp RA(S)       &kp BSLH        &kp PIPE    &kp AMPS                    &none           &kp RA(J)               &none           &none       &none
+		            &kp RA(Q)   &none           &kp RA(E)       &kp RA(R)   &none                       &kp RA(Y)       &kp RA(U)               &kp RA(I)       &kp RA(O)   &kp RA(P) 
+		            &kp RA(A)   &kp RA(S)       &none           &none       &none                       &none           &kp RA(J)               &none           &none       &none
 		            &none       &none           &none           &none       &none				        &kp RA(N)       &none                   &none           &none       &none 
           				                                        &none       &none                       &none           &none 
                 >;
