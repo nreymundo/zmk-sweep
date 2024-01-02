@@ -15,7 +15,7 @@
     #define FNC 3
     #define SYM2 4
     #define ACCENT 5
-	#define SETTINGS 6
+    #define SETTINGS 6
 // -----------------
 
 &mt {
